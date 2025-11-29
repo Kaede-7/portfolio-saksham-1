@@ -264,7 +264,13 @@ label {
   color: #9ea3a6;
   font-weight: 300;
 }
-
+.field:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  background: #f8f8f8;
+  transition: all 0.25s ease;
+}
 textarea.field {
   min-height: 140px;
   line-height: 1.45;
@@ -295,13 +301,7 @@ textarea.field {
 .sub-btn:active {
   transform: translateY(-1px);
 }
-.field:focus {
-  outline: none;
-  border-color: black;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  background: #f8f8f8;
-  transition: all 0.25s ease;
-}
+
 #output {
   border: none;
   font-family: "Montserrat", sans-serif;
@@ -410,6 +410,9 @@ textarea.field {
   .form-container {
     margin: 20px auto;
     width: 90%;
-    max-width: 400px;
+    max-width: 300px;
+  }
+  .field {
+    width: 275px;
   }
 }
